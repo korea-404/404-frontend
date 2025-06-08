@@ -6,7 +6,7 @@
 }
 
 .login-box {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
@@ -120,7 +120,7 @@
   width: 100%;
   padding: 10px;
   background-color: var(--main-blue);
-  color: white;
+  color: #FBFBFB;
   border: none;
   border-radius: 8px;
   font-weight: bold;
@@ -134,9 +134,26 @@
   display: flex;
   justify-content: space-between;
   font-size: 14px;
+  margin-top: 10px;
 }
 
-.links a {
-  color: var(--main-blue);
+.find-link span {
+  color: #357ae1;
+  cursor: pointer;
   text-decoration: none;
 }
+
+.find-link span:hover {
+  text-decoration: underline;
+}
+
+.register-link {
+  color: #357ae1;
+  cursor: pointer;
+}
+
+.register-link:hover {
+  text-decoration: underline;
+}
+
+

@@ -1,17 +1,16 @@
-import React from 'react';
-import Navbar from '../components/Navbar';
+ import React from 'react';
+import Layout from '../components/Layout';
 import LoginForm from '../components/LoginForm';
 
 const LoginPage: React.FC = () => {
-  console.log('✅ LoginPage 렌더링됨'); 
+  console.log('✅ LoginPage 렌더링됨');
 
   return (
-    <>
-      <Navbar />
+    <Layout>
       <main className="login-area">
         <LoginForm />
       </main>
-    </>
+    </Layout>
   );
 };
 

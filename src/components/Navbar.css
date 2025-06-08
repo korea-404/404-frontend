@@ -134,3 +134,7 @@
 .dropdown-group a:hover {
   text-decoration: underline;
 }
+
+.dropdown-wrapper {
+  position: relative;
+}

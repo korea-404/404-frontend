@@ -32,35 +32,36 @@ const Navbar: React.FC = () => {
 
   return (
     <header className={`navbar ${activeIndex !== null ? 'white-bg' : ''}`}>
-      <div className="navbar-container">
-        <a href="/" className="navbar-logo">
-          <img src="로고.png" alt="로고" className="logo-img" />
-          <span className="logo-title">고교학점제 수강신청</span>
-        </a>
-        <nav className="navbar-menu">
-          {['고교학점제 소개', '공지사항'].map((title, index) => (
-            <div
-              key={index}
-              className="dropdown"
-              onMouseEnter={() => setActiveIndex(index)}
-              onMouseLeave={() => setActiveIndex(null)}
-            >
-              <span className="menu-item">{title}</span>
-            </div>
-          ))}
-        </nav>
-      </div>
+  <div
+    className="dropdown-wrapper" // ⬅️ 새로 추가
+    onMouseEnter={() => {}}
+    onMouseLeave={() => setActiveIndex(null)} // 전체 벗어났을 때만 닫힘
+  >
+    <div className="navbar-container">
+      <a href="/" className="navbar-logo">
+        <img src="/로고.png" alt="로고" className="logo-img" />
+        <span className="logo-title">고교학점제 수강신청</span>
+      </a>
+      <nav className="navbar-menu">
+        {['고교학점제 소개', '공지사항'].map((title, index) => (
+          <div
+            key={index}
+            className="dropdown"
+            onMouseEnter={() => setActiveIndex(index)} // 마우스 올리면 열림
+          >
+            <span className="menu-item">{title}</span>
+          </div>
+        ))}
+      </nav>
+    </div>
 
-      {activeIndex !== null && (
-        <div
-          className="dropdown-area active"
-          onMouseEnter={() => {}}
-          onMouseLeave={() => setActiveIndex(null)}
-        >
-          {dropdownContents[activeIndex]}
-        </div>
-      )}
-    </header>
+    {activeIndex !== null && (
+      <div className="dropdown-area active">
+        {dropdownContents[activeIndex]}
+      </div>
+    )}
+  </div>
+</header>
   );
 };
 
