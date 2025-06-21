@@ -1,6 +1,6 @@
 import React from 'react';
-import RegisterForm from '../components/RegisterForm';
-import Layout from '../components/Layout'; // ✅ 공통 레이아웃
+import RegisterForm from '../../components/RegisterForm';
+import Layout from '../../components/Layout';
 
 const RegisterTeacherPage: React.FC = () => {
   return (

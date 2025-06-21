@@ -1,6 +1,6 @@
 // src/pages/FindPasswordPage.tsx
 import React, { useState } from 'react';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 import './FindPasswordPage.css';
 
 const FindPasswordPage: React.FC = () => {

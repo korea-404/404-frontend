@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Layout from '../components/Layout'; // ✅ Navbar 대신 Layout 임포트
+import Layout from '../../components/Layout'; 
 import './RegisterSelectPage.css';
 
 const RegisterSelectPage: React.FC = () => {

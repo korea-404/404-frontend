@@ -1,6 +1,6 @@
 import React from 'react';
-import RegisterForm from '../components/RegisterForm';
-import Layout from '../components/Layout'; // ✅ Navbar 대신 Layout 임포트
+import RegisterForm from '../../components/RegisterForm';
+import Layout from '../../components/Layout';
 
 const RegisterStudentPage: React.FC = () => {
   return (
