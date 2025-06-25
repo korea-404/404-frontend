@@ -1,0 +1,128 @@
+.student-sidebar.with-gap {
+  margin-left: 2rem;
+}
+
+.student-sidebar {
+  width: 260px;
+  background: #183153;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2.5rem;
+  box-shadow: 2px 0 16px rgba(24,49,83,0.10);
+  gap: 2rem;
+}
+
+.student-sidebar-only-info {
+  width: 260px;
+  background: #f4f8fd;
+  color: #223154;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border-radius: 2rem;
+  box-shadow: none;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.user-info-card {
+  background: #e0e7ff;
+  color: #1e293b;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(24,49,83,0.10);
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-info-card-only {
+  background: #2563eb;
+  color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(24,49,83,0.10);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-info-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #fff;
+}
+
+.user-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.user-info-row {
+  display: flex;
+  gap: 0.7rem;
+  font-size: 1rem;
+}
+
+.user-info-label {
+  min-width: 70px;
+  color: #dbeafe;
+  font-weight: 600;
+}
+
+.student-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-menu-list {
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.sidebar-btn {
+  background: #fff;
+  color: #2563eb;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.sidebar-btn:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-btn.notice {
+  background: linear-gradient(90deg, #3b82f6, #2563eb);
+  color: #fff;
+}
+
+.sidebar-btn:hover {
+  background: #dbeafe;
+  color: #1e293b;
+}
+
+.sidebar-btn.notice:hover {
+  background: #2563eb;
+  color: #fff;
+} 

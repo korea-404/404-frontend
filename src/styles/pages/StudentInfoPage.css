@@ -1,0 +1,50 @@
+body, .student-info-layout {
+  background: #f4f8fd;
+}
+
+.student-info-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.student-main-area {
+  flex: 1;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.student-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #1e293b;
+}
+
+.student-info-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.student-info-table th, .student-info-table td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.student-info-table th {
+  background: #f1f5f9;
+  color: #2563eb;
+  font-weight: 600;
+  width: 160px;
+}
+
+.student-info-table tr:last-child td, .student-info-table tr:last-child th {
+  border-bottom: none;
+} 

@@ -1,0 +1,38 @@
+.lecture-filter-box {
+  background-color: #eaf0fe;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.filter-grid select,
+.filter-grid input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.filter-button-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.search-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
